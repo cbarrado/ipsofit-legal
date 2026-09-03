@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — FocusFit</title>
+<meta name="description" content="Política de privacidad de FocusFit: qué datos trata la app, dónde se guardan, nuestros proveedores y tus derechos.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6b4a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="index.es.html">FocusFit</a>
+    <nav class="pages">
+      <a href="index.es.html">Legal</a>
+      <a href="privacy.es.html" aria-current="page">Privacidad</a>
+      <a href="terms.es.html">Términos</a>
+      <a href="disclaimer.es.html">Aviso médico</a>
+      <a class="lang" href="privacy.html" lang="en" hreflang="en">English</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Política de privacidad</h1>
+    <p class="updated">Versión 1.0 — última actualización: 3 de septiembre de 2026</p>
+
+    <div class="banner">Tus entrenamientos nunca salen de tu dispositivo.
+      <span class="sub">FocusFit guarda las sesiones de ejercicio, las series, las estadísticas y
+      los ajustes en una base de datos local en tu ordenador o teléfono. El único dato personal
+      que tenemos en un servidor es lo que necesita una cuenta: tu dirección de correo y tu
+      estado de acceso.</span></div>
+
+    <h2>1. Quién es el responsable</h2>
+    <p>FocusFit está desarrollada y operada por <strong>Carlos Barrado</strong>, desarrollador
+      individual ("nosotros"). Somos el responsable del tratamiento de los datos de cuenta
+      descritos en esta política. Contacto:
+      <a href="mailto:support@ipsofit.com">support@ipsofit.com</a>.</p>
+
+    <h2>2. En resumen</h2>
+    <ul>
+      <li><strong>Los datos de entrenamiento y de salud se quedan en tu dispositivo.</strong> Nunca los recibimos.</li>
+      <li><strong>Hace falta una cuenta</strong> durante la beta. Guardamos tu dirección de correo,
+        cómo iniciaste sesión, tu rol y estado de acceso, y un campo de nivel de suscripción que
+        por ahora no se usa.</li>
+      <li><strong>Sin analítica, sin publicidad, sin informes de errores, sin rastreo.</strong></li>
+      <li>Nuestros servidores están alojados por Supabase en la <strong>Unión Europea (AWS eu-west-1, Irlanda)</strong>.</li>
+      <li>Puedes <strong>eliminar tu cuenta desde la propia app</strong> en cualquier momento y
+        exportar tus datos locales en escritorio.</li>
+    </ul>
+
+    <h2>3. Datos que se quedan en tu dispositivo</h2>
+    <p>Todo lo que FocusFit sabe de tu entrenamiento vive en un archivo de base de datos dentro
+      del almacenamiento privado de la app en tu dispositivo: sesiones Pomodoro, bloques y
+      series de ejercicio, repeticiones completadas, estadísticas por grupo muscular,
+      calibración de ejercicios, contexto de equipamiento, recordatorios y el resto de
+      ajustes. Estos datos no se suben, no se sincronizan y no los copiamos nosotros. Se
+      eliminan al desinstalar la app (Android), al usar "Borrar datos" del sistema (Android) o
+      al marcar "Borrar también los datos de entrenamiento de este dispositivo" cuando eliminas
+      tu cuenta (escritorio).</p>
+    <p>En escritorio puedes <strong>exportar</strong> esta base de datos a un archivo que tú
+      eliges (Ajustes → Datos → Exportar) e importarla más tarde. El archivo exportado es tuyo:
+      dónde lo guardas y con quién lo compartes queda bajo tu control.</p>
+
+    <h2>4. Datos de cuenta que tratamos en un servidor</h2>
+    <p>FocusFit está en beta cerrada. Para usarla creas una cuenta y un administrador aprueba tu
+      solicitud. Para ello tratamos:</p>
+    <table>
+      <tr><th>Dato</th><th>Para qué</th></tr>
+      <tr><td>Dirección de correo</td><td>Identifica tu cuenta; permite avisar al administrador de tu solicitud de acceso y contactarte sobre ella.</td></tr>
+      <tr><td>Método de inicio de sesión y, con Google, el identificador y la información básica de perfil que Google comparte (nombre, URL de la foto de perfil)</td><td>Te autentica. Lo guarda nuestro proveedor de autenticación como parte del registro de identidad.</td></tr>
+      <tr><td>Rol (user, tester o admin), estado de acceso (pending, approved o rejected) y un nivel de suscripción (sin uso durante la beta)</td><td>Controla lo que la app te permite hacer. Va incluido como claims en tu token de sesión.</td></tr>
+      <tr><td>Registro de solicitud de acceso: tu correo más un token de un solo uso, solo mientras la solicitud está pendiente</td><td>Hace funcionar los enlaces de aprobar / rechazar del administrador. Se borra en el momento en que se decide.</td></tr>
+      <tr><td>Registros de autenticación: dirección IP, identificador de dispositivo/navegador y marcas de tiempo de los inicios de sesión</td><td>Los conserva nuestro proveedor de autenticación por seguridad y prevención de abusos, durante un periodo limitado que fija el proveedor.</td></tr>
+      <tr><td>Tokens de sesión</td><td>Se guardan en tu dispositivo para mantenerte con la sesión iniciada; se renuevan automáticamente.</td></tr>
+    </table>
+    <p><strong>Base jurídica.</strong> Tratamos estos datos para prestarte el servicio que has
+      pedido y gestionar la beta según los <a href="terms.es.html">Términos de uso</a>
+      (ejecución de un contrato), y para mantener el servicio seguro y limitado a personas
+      aprobadas (interés legítimo). Si eliges iniciar sesión con Google, la política de
+      privacidad de Google rige lo que Google hace por su parte.</p>
+    <p>Las <strong>contraseñas</strong> del inicio de sesión por correo las cifra (hash) nuestro
+      proveedor de autenticación; nunca las vemos ni las guardamos en claro.</p>
+
+    <h2>5. Conexiones que hace la app</h2>
+    <ul>
+      <li><strong>Iniciar sesión y mantenerla</strong>: llamadas a nuestro proveedor de
+        autenticación (Supabase). Tu dirección IP es visible para él, como en cualquier
+        petición por internet.</li>
+      <li><strong>Inicio de sesión con Google</strong>: abre Google en tu navegador (escritorio)
+        o en una pestaña segura (Android). Solo ocurre si eliges esa opción.</li>
+      <li><strong>Comprobación de actualizaciones</strong>: al arrancar, y cuando pulsas "Buscar
+        actualizaciones", la app pregunta a nuestro almacenamiento de descargas (Supabase
+        Storage) si hay una versión nueva. La petición lleva tu IP y la versión de la app. En
+        Windows con instalador la actualización se descarga del mismo almacenamiento; el resto
+        de versiones muestran un enlace de descarga.</li>
+      <li><strong>Eliminar tu cuenta</strong>: una llamada a nuestro servidor que borra la cuenta.</li>
+    </ul>
+    <p>Esa es la lista completa. FocusFit no envía telemetría, estadísticas de uso, informes de
+      errores ni identificadores publicitarios a ningún sitio.</p>
+
+    <h2>6. Proveedores de servicios</h2>
+    <p>Usamos un número reducido de proveedores que tratan datos por cuenta nuestra:</p>
+    <table>
+      <tr><th>Proveedor</th><th>Qué hace para nosotros</th><th>Dónde</th></tr>
+      <tr><td>Supabase, Inc.</td><td>Autenticación, la base de datos con los registros de cuenta de la sección 4 y el almacenamiento de archivos que sirve las actualizaciones.</td><td>Nuestro proyecto está alojado en AWS en <strong>eu-west-1 (Irlanda, UE)</strong>. Supabase es una empresa de EE. UU.; su Anexo de tratamiento de datos con cláusulas contractuales tipo cubre cualquier acceso desde fuera de la UE.</td></tr>
+      <tr><td>Resend, Inc.</td><td>Envía al administrador un correo por cada solicitud de acceso, con la dirección de correo solicitante.</td><td>Estados Unidos. En ese mensaje solo van tu dirección de correo y los enlaces de la solicitud.</td></tr>
+      <tr><td>Google LLC</td><td>Proveedor de identidad, solo si eliges "Iniciar sesión con Google".</td><td>Según la política de privacidad de Google.</td></tr>
+      <tr><td>GitHub, Inc.</td><td>Aloja este sitio web y la página que usa el administrador para confirmar una aprobación (GitHub Pages).</td><td>GitHub Pages registra las IP de los visitantes por seguridad según la declaración de privacidad de GitHub.</td></tr>
+    </table>
+    <p>No vendemos datos personales, no los compartimos con anunciantes y no los usamos para
+      elaborar perfiles.</p>
+
+    <h2>7. Cuánto tiempo conservamos los datos</h2>
+    <ul>
+      <li><strong>Registros de cuenta</strong>: hasta que eliminas tu cuenta o hasta que la
+        cerremos al terminar la beta. La eliminación borra de inmediato la cuenta, su perfil y
+        cualquier solicitud pendiente.</li>
+      <li><strong>Registros de solicitud de acceso</strong>: se borran al aprobar o rechazar la solicitud.</li>
+      <li><strong>Registros de autenticación</strong>: un periodo limitado fijado por Supabase,
+        tras el cual se purgan automáticamente.</li>
+      <li><strong>Copias de seguridad del proveedor</strong>: Supabase conserva copias rutinarias
+        de la base de datos durante una ventana corta y rotativa; un registro borrado desaparece
+        de ellas cuando la ventana expira.</li>
+    </ul>
+
+    <h2>8. Tus derechos y cómo ejercerlos</h2>
+    <p>Según el RGPD y leyes similares puedes pedir acceso, rectificación, supresión o copia de
+      tus datos personales, pedir la limitación del tratamiento u oponerte a él, y reclamar
+      ante tu autoridad de protección de datos. La mayor parte puedes hacerla tú mismo:</p>
+    <ul>
+      <li><strong>Supresión</strong>: en la app, Ajustes → Cuenta → <em>Eliminar cuenta</em>. Si tu
+        solicitud sigue pendiente, encontrarás la misma opción en la pantalla de espera. Escribe
+        tu correo para confirmar. En escritorio puedes borrar también la base de datos local en
+        el mismo paso; en Android, usa "Borrar datos" del sistema o desinstala la app para
+        eliminar los datos locales.</li>
+      <li><strong>Portabilidad de los datos locales</strong>: en escritorio, Ajustes → Datos →
+        <em>Exportar mis datos</em> genera una copia completa de tu base de datos local.</li>
+      <li><strong>Acceso, rectificación o cualquier otra cosa</strong>: escribe a
+        <a href="mailto:support@ipsofit.com">support@ipsofit.com</a> desde la dirección de tu
+        cuenta. Respondemos en el plazo de un mes.</li>
+    </ul>
+
+    <h2>9. Menores</h2>
+    <p>FocusFit no está dirigida a menores. No crees una cuenta si tienes menos de 16 años.</p>
+
+    <h2>10. Seguridad</h2>
+    <p>Todas las conexiones usan TLS. Las filas de cuenta están protegidas con seguridad a nivel
+      de fila, de modo que un usuario con sesión solo puede leer su propio registro; las
+      acciones administrativas pasan por funciones de servidor que verifican quién llama. Los
+      enlaces de aprobación son tokens de un solo uso. Tus datos de entrenamiento nunca llegan
+      a un servidor, que es la mayor protección que podemos ofrecerles.</p>
+
+    <h2>11. Cambios en esta política</h2>
+    <p>Publicaremos cualquier cambio aquí con un nuevo número de versión y fecha. Si un cambio
+      afecta de forma sustancial a lo que hacemos con tus datos, la app te lo indicará la
+      siguiente vez que la abras.</p>
+
+    <h2>12. Contacto</h2>
+    <p>Carlos Barrado — <a href="mailto:support@ipsofit.com">support@ipsofit.com</a>.</p>
+  </main>
+
+  <footer class="site">
+    <p>Consulta también los <a href="terms.es.html">Términos de uso</a> y el
+      <a href="disclaimer.es.html">Aviso médico y de seguridad</a>.<br>
+      Estructura de página adaptada de <a href="https://github.com/OpenStrap/edge">OpenStrap/edge</a> (MIT).</p>
+  </footer>
+</div>
+</body>
+</html>

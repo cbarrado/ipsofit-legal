@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — FocusFit</title>
+<meta name="description" content="Privacy Policy for FocusFit: what the app processes, where it is stored, our providers, and your rights.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6b4a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="index.html">FocusFit</a>
+    <nav class="pages">
+      <a href="index.html">Legal</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a class="lang" href="privacy.es.html" lang="es" hreflang="es">Español</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Version 1.0 — last updated 3 September 2026</p>
+
+    <div class="banner">Your workouts never leave your device.
+      <span class="sub">FocusFit keeps exercise sessions, sets, statistics and settings in a local
+      database on your computer or phone. The only personal data we hold on a server is what an
+      account needs: your email address and your access status.</span></div>
+
+    <h2>1. Who is responsible</h2>
+    <p>FocusFit is developed and operated by <strong>Carlos Barrado</strong>, an individual
+      developer ("we", "us"). We are the data controller for the account data described in
+      this policy. Contact: <a href="mailto:support@ipsofit.com">support@ipsofit.com</a>.</p>
+
+    <h2>2. In short</h2>
+    <ul>
+      <li><strong>Workout and health-adjacent data stay on your device.</strong> We never receive them.</li>
+      <li><strong>An account is required</strong> during the beta. We store your email address, how
+        you signed in, your role and access status, and a subscription tier field that is
+        currently unused.</li>
+      <li><strong>No analytics, no advertising, no crash reporting, no tracking.</strong></li>
+      <li>Our servers are hosted by Supabase in the <strong>European Union (AWS eu-west-1, Ireland)</strong>.</li>
+      <li>You can <strong>delete your account from inside the app</strong> at any time, and export
+        your local data on desktop.</li>
+    </ul>
+
+    <h2>3. Data that stays on your device</h2>
+    <p>Everything FocusFit knows about your training lives in a database file inside the app's
+      private storage on your device: Pomodoro sessions, exercise blocks and sets, completed
+      repetitions, muscle-group statistics, exercise calibration, equipment context, reminders
+      and every other setting. This data is not uploaded, synchronised or backed up by us. It
+      is removed when you uninstall the app (Android), when you use the operating system's
+      "Clear data" (Android), or when you tick "Also erase workout data on this device" while
+      deleting your account (desktop).</p>
+    <p>On desktop you can <strong>export</strong> this database to a file of your choosing
+      (Settings → Data → Export) and import it again later. The exported file is yours: where
+      you keep it and who you share it with is under your control.</p>
+
+    <h2>4. Account data we process on a server</h2>
+    <p>FocusFit is in a closed beta. To use it you create an account, and an administrator
+      approves your request. For that we process:</p>
+    <table>
+      <tr><th>Data</th><th>Why</th></tr>
+      <tr><td>Email address</td><td>Identifies your account; lets us notify the administrator of your access request and contact you about it.</td></tr>
+      <tr><td>Sign-in method and, for Google sign-in, the identifier and basic profile information Google shares (name, profile picture URL)</td><td>Authenticates you. Stored by our authentication provider as part of the identity record.</td></tr>
+      <tr><td>Role (user, tester or admin), access status (pending, approved or rejected) and a subscription tier (unused during the beta)</td><td>Controls what the app lets you do. Included as claims in your sign-in token.</td></tr>
+      <tr><td>Access request record: your email plus a one-time token, only while your request is pending</td><td>Powers the administrator's approve / reject links. Deleted the moment a decision is made.</td></tr>
+      <tr><td>Authentication logs: IP address, device/browser identifier and timestamps of sign-in events</td><td>Kept by our authentication provider for security and abuse prevention, for a limited period set by the provider.</td></tr>
+      <tr><td>Session tokens</td><td>Stored on your device so you stay signed in; refreshed automatically.</td></tr>
+    </table>
+    <p><strong>Legal basis.</strong> We process this data to provide the service you asked for
+      and to run the beta under the <a href="terms.html">Terms of Use</a> (performance of a
+      contract), and to keep the service secure and limited to approved people (our
+      legitimate interest). If you choose Google sign-in, Google's own privacy policy governs
+      what Google does on its side.</p>
+    <p><strong>Passwords</strong> for email sign-in are hashed by our authentication provider;
+      we never see or store them in clear text.</p>
+
+    <h2>5. Connections the app makes</h2>
+    <ul>
+      <li><strong>Signing in and staying signed in</strong> — calls to our authentication
+        provider (Supabase). Your device's IP address is visible to it, as with any internet request.</li>
+      <li><strong>Google sign-in</strong> — opens Google in your browser (desktop) or in a
+        secure browser tab (Android). Only happens if you pick that option.</li>
+      <li><strong>Update check</strong> — on launch, and when you press "Check for updates",
+        the app asks our download storage (Supabase Storage) whether a newer version exists.
+        The request carries your IP address and the app version. On Windows installer builds
+        the update itself is downloaded from the same storage; other builds show a download link.</li>
+      <li><strong>Deleting your account</strong> — one call to our server that removes your account.</li>
+    </ul>
+    <p>That is the complete list. FocusFit does not send telemetry, usage statistics, crash
+      reports or advertising identifiers anywhere.</p>
+
+    <h2>6. Service providers</h2>
+    <p>We use a small number of providers who process data on our behalf:</p>
+    <table>
+      <tr><th>Provider</th><th>What they do for us</th><th>Where</th></tr>
+      <tr><td>Supabase, Inc.</td><td>Authentication, the database holding the account records in section 4, and the file storage that serves app updates.</td><td>Our project is hosted on AWS in <strong>eu-west-1 (Ireland, EU)</strong>. Supabase is a US company; its Data Processing Addendum with standard contractual clauses covers any access from outside the EU.</td></tr>
+      <tr><td>Resend, Inc.</td><td>Sends the administrator one email per access request, containing the requesting email address.</td><td>United States. Only your email address and the request links are in that message.</td></tr>
+      <tr><td>Google LLC</td><td>Identity provider, only if you choose "Sign in with Google".</td><td>Per Google's privacy policy.</td></tr>
+      <tr><td>GitHub, Inc.</td><td>Hosts this website and the page the administrator uses to confirm an approval (GitHub Pages).</td><td>GitHub Pages records visitor IP addresses for security under GitHub's privacy statement.</td></tr>
+    </table>
+    <p>We do not sell personal data, share it with advertisers, or use it for profiling.</p>
+
+    <h2>7. How long we keep data</h2>
+    <ul>
+      <li><strong>Account records</strong> — until you delete your account, or until we close it
+        after the beta ends. Deletion removes the account, its profile and any pending request
+        immediately.</li>
+      <li><strong>Access request records</strong> — deleted when the request is approved or rejected.</li>
+      <li><strong>Authentication logs</strong> — a limited period set by Supabase, after which
+        they are purged automatically.</li>
+      <li><strong>Provider backups</strong> — Supabase keeps routine database backups for a short
+        rolling window; a deleted record disappears from them when the window expires.</li>
+    </ul>
+
+    <h2>8. Your rights and how to use them</h2>
+    <p>Under the GDPR and similar laws you can ask for access to, rectification of, erasure of,
+      or a copy of your personal data, ask us to restrict or object to processing, and
+      complain to your data protection authority. Most of it you can do yourself:</p>
+    <ul>
+      <li><strong>Erasure</strong> — in the app: Settings → Account → <em>Delete account</em>. If
+        your request is still pending you will find the same option on the waiting screen.
+        Type your email to confirm. On desktop you can also erase the local database in the
+        same step; on Android, use the system's "Clear data" or uninstall the app to remove
+        local data.</li>
+      <li><strong>Portability of local data</strong> — desktop: Settings → Data → <em>Export my
+        data</em> produces a complete copy of your local database.</li>
+      <li><strong>Access, rectification, or anything else</strong> — email
+        <a href="mailto:support@ipsofit.com">support@ipsofit.com</a> from the address on your
+        account. We answer within one month.</li>
+    </ul>
+
+    <h2>9. Children</h2>
+    <p>FocusFit is not directed at children. Do not create an account if you are under 16.</p>
+
+    <h2>10. Security</h2>
+    <p>All connections use TLS. Account rows are protected by row-level security so a signed-in
+      user can read only their own record; administrative actions run through server-side
+      functions that verify the caller. Approval links are single-use tokens. Your workout
+      data never reaches a server, which is the strongest protection we can offer for it.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>We will post any change here with a new version number and date. If a change materially
+      affects what we do with your data, the app will tell you the next time you open it.</p>
+
+    <h2>12. Contact</h2>
+    <p>Carlos Barrado — <a href="mailto:support@ipsofit.com">support@ipsofit.com</a>.</p>
+  </main>
+
+  <footer class="site">
+    <p>See also the <a href="terms.html">Terms of Use</a> and the
+      <a href="disclaimer.html">Medical &amp; Safety Disclaimer</a>.<br>
+      Page structure adapted from <a href="https://github.com/OpenStrap/edge">OpenStrap/edge</a> (MIT).</p>
+  </footer>
+</div>
+</body>
+</html>
