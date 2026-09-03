@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>FocusFit — Confirmar solicitud</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #2F384B; color: #fff; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+    main { max-width: 480px; padding: 32px 16px; }
+    h1 { font-size: 22px; margin: 0 0 8px; }
+    h2 { font-size: 18px; font-weight: 400; margin: 0 0 24px; color: #cfd6e4; }
+    button { color: #fff; padding: 12px 24px; border: 0; border-radius: 8px; font-size: 16px; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: default; }
+    .approve { background: #16a34a; }
+    .reject { background: #dc2626; }
+    .muted { color: #9aa5b8; font-size: 13px; margin-top: 24px; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FocusFit</h1>
+    <h2 id="question"></h2>
+    <button id="confirm" hidden></button>
+    <p id="result" hidden></p>
+    <p class="muted">Cada enlace es de un solo uso.</p>
+  </main>
+  <script>
+    const FUNCTION_URL = "https://zldmzmoskjabdmmewshv.supabase.co/functions/v1/decide-approval";
+    const params = new URLSearchParams(location.search);
+    const uid = params.get("uid") || "";
+    const token = params.get("token") || "";
+    const action = params.get("action") || "";
+
+    const question = document.getElementById("question");
+    const confirm = document.getElementById("confirm");
+    const result = document.getElementById("result");
+
+    const label = action === "approve" ? "aprobar" : action === "reject" ? "rechazar" : "";
+    if (!label || !uid || !token) {
+      question.textContent = "Enlace inválido.";
+    } else {
+      question.textContent = `¿Quieres ${label} esta solicitud de acceso?`;
+      confirm.textContent = `Sí, ${label}`;
+      confirm.className = action;
+      confirm.hidden = false;
+    }
+
+    const MESSAGES = {
+      approved: "Solicitud aprobada. El usuario tendrá acceso en su próximo inicio de sesión.",
+      rejected: "Solicitud rechazada.",
+      used_or_invalid: "Este enlace ya se usó o no es válido.",
+      error: "Error procesando la solicitud. Inténtalo de nuevo.",
+    };
+
+    confirm.addEventListener("click", async () => {
+      confirm.disabled = true;
+      confirm.textContent = "Procesando…";
+      let message = MESSAGES.error;
+      try {
+        const query = new URLSearchParams({ uid, token, action }).toString();
+        const res = await fetch(`${FUNCTION_URL}?${query}`, { method: "POST" });
+        const body = await res.json().catch(() => ({}));
+        if (body.ok === true) {
+          message = action === "approve" ? MESSAGES.approved : MESSAGES.rejected;
+        } else if (res.status === 403) {
+          message = MESSAGES.used_or_invalid;
+        }
+      } catch (_) {
+        // network failure: keep the generic error message
+      }
+      confirm.hidden = true;
+      question.hidden = true;
+      result.textContent = message;
+      result.hidden = false;
+    });
+  </script>
+</body>
+</html>
