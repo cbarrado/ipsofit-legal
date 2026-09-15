@@ -1,6 +1,6 @@
-# focusfit-legal
+# ipsofit-legal
 
-Public pages for [FocusFit](https://github.com/cbarrado/FocusFit), served via GitHub Pages at `https://cbarrado.github.io/focusfit-legal/`.
+Public pages for Ipsofit (repo codename FocusFit — [cbarrado/FocusFit](https://github.com/cbarrado/FocusFit)), served via GitHub Pages at `https://cbarrado.github.io/ipsofit-legal/` (the old `focusfit-legal` path redirects).
 
 | Page | Purpose |
 |------|---------|
