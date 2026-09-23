@@ -1,6 +1,6 @@
-# focusfit-legal
+# ipsofit-legal
 
-Public pages for IpsoFit (repo codename FocusFit — [cbarrado/FocusFit](https://github.com/cbarrado/FocusFit)), served via GitHub Pages at `https://cbarrado.github.io/focusfit-legal/`. The repo keeps its codename: GitHub Pages does **not** redirect a renamed project site, so the path can only change together with an app release that points `LEGAL_BASE_URL` at the new one — or, better, after the Pages custom domain `ipsofit.com` is live, which makes the repo name irrelevant.
+Public legal pages for IpsoFit, served via GitHub Pages at the custom domain `https://ipsofit.com/`. The app reads that base URL (`LEGAL_BASE_URL`), so the repo name does not affect any link.
 
 | Page | Purpose |
 |------|---------|
@@ -14,7 +14,7 @@ No build step. Every page is plain HTML sharing `style.css`.
 
 ## Attribution
 
-Page structure and base styles are adapted from [OpenStrap/edge](https://github.com/OpenStrap/edge) (`docs/*.html`, `docs/style.css`), MIT licensed. All legal text is original to FocusFit.
+Page structure and base styles are adapted from [OpenStrap/edge](https://github.com/OpenStrap/edge) (`docs/*.html`, `docs/style.css`), MIT licensed. All legal text is original to IpsoFit.
 
 ## Legal texts
 
