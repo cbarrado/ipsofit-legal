@@ -23,7 +23,7 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <p class="updated">Version 1.4 — last updated 20 September 2026</p>
+    <p class="updated">Version 1.5 — last updated 21 October 2026</p>
 
     <div class="banner">Your workouts never leave your device.
       <span class="sub">IpsoFit keeps exercise sessions, sets, statistics and settings in a local
@@ -89,6 +89,9 @@
         provider (Supabase). Your device's IP address is visible to it, as with any internet request.</li>
       <li><strong>Google sign-in</strong> — opens Google in your browser (desktop) or in a
         secure browser tab (Android). Only happens if you pick that option.</li>
+      <li><strong>Profile picture</strong> — if you signed in with Google, the home screen
+        loads your Google profile picture straight from Google's image servers when it is
+        shown. Google sees your IP address in that request; the app sends no referrer with it.</li>
       <li><strong>Update check</strong> — on launch, and when you press "Check for updates",
         the app asks our download storage (Supabase Storage) whether a newer version exists.
         The request carries your IP address and the app version. On Windows installer builds
