@@ -23,7 +23,7 @@
 
   <main>
     <h1>Política de privacidad</h1>
-    <p class="updated">Versión 1.6 — última actualización: 23 de octubre de 2026</p>
+    <p class="updated">Versión 1.7 — última actualización: 23 de octubre de 2026</p>
 
     <div class="banner">Tus entrenamientos nunca salen de tu dispositivo.
       <span class="sub">IpsoFit guarda las sesiones de ejercicio, las series, las estadísticas y
@@ -46,7 +46,7 @@
         cómo iniciaste sesión, tu rol y estado de acceso, y un campo de nivel de suscripción que
         por ahora no se usa.</li>
       <li><strong>Sin analítica, sin publicidad, sin informes de errores, sin rastreo.</strong></li>
-      <li><strong>El feedback es opcional.</strong> Si envías un comentario desde la app, llega con tu email y la versión de la app a un repositorio privado de GitHub que solo ve el administrador. Por favor, no incluyas datos de salud.</li>
+      <li><strong>El feedback es opcional.</strong> Si envías un comentario desde la app, llega con tu email, la versión de la app y las capturas que adjuntes a un repositorio privado de GitHub que solo ve el administrador. Por favor, no incluyas datos de salud ni en el texto ni en las capturas.</li>
       <li>Nuestros servidores están alojados por Supabase en la <strong>Unión Europea (AWS eu-west-1, Irlanda)</strong>.</li>
       <li>Puedes <strong>eliminar tu cuenta desde la propia app</strong> en cualquier momento y
         exportar tus datos locales en escritorio.</li>
@@ -78,7 +78,7 @@
       <tr><td>Registro de solicitud de acceso: tu correo más un token de un solo uso, solo mientras la solicitud está pendiente</td><td>Hace funcionar los enlaces de aprobar / rechazar del administrador. Se borra en el momento en que se decide.</td></tr>
       <tr><td>Registros de autenticación: dirección IP, identificador de dispositivo/navegador y marcas de tiempo de los inicios de sesión</td><td>Los conserva nuestro proveedor de autenticación por seguridad y prevención de abusos, durante un periodo limitado que fija el proveedor.</td></tr>
       <tr><td>Tokens de sesión</td><td>Se guardan en tu dispositivo para mantenerte con la sesión iniciada; se renuevan automáticamente.</td></tr>
-      <tr><td>El feedback que decidas enviar desde la app: tu mensaje, el tipo que elegiste (problema, idea u otra cosa), tu email, el identificador y el rol de tu cuenta, la versión de la app, la plataforma (Android o Windows), el idioma de la app y la hora del envío</td><td>Nos permite leer, reproducir y arreglar lo que nos cuentas, y responderte por email. Solo se envía cuando pulsas Enviar; se guarda como una incidencia en un repositorio privado de GitHub al que solo accede el administrador. Por favor, no incluyas datos de salud en el feedback.</td></tr>
+      <tr><td>El feedback que decidas enviar desde la app: tu mensaje, el tipo que elegiste (problema, idea u otra cosa), tu email, el identificador y el rol de tu cuenta, la versión de la app, la plataforma (Android o Windows), el idioma de la app y la hora del envío, además de hasta tres capturas de pantalla que decidas adjuntar</td><td>Nos permite leer, reproducir y arreglar lo que nos cuentas, y responderte por email. Solo se envía cuando pulsas Enviar; se guarda como una incidencia, con las capturas como archivos, en un repositorio privado de GitHub al que solo accede el administrador. Por favor, no incluyas datos de salud ni en el feedback ni en las capturas.</td></tr>
     </table>
     <p><strong>Base jurídica.</strong> Tratamos estos datos para prestarte el servicio que has
       pedido y gestionar la beta según los <a href="terms.es.html">Términos de uso</a>
@@ -104,7 +104,7 @@
         Storage) si hay una versión nueva. La petición lleva tu IP y la versión de la app. En
         Windows con instalador la actualización se descarga del mismo almacenamiento; el resto
         de versiones muestran un enlace de descarga.</li>
-      <li><strong>Enviar feedback</strong>: al pulsar Enviar en la pantalla de feedback, una llamada a nuestro servidor (Supabase), que guarda tu mensaje, con los datos de la sección 4, en un repositorio privado de GitHub. La petición lleva tu dirección IP. Solo ocurre cuando envías feedback.</li>
+      <li><strong>Enviar feedback</strong>: al pulsar Enviar en la pantalla de feedback, una llamada a nuestro servidor (Supabase), que guarda tu mensaje y las capturas que adjuntes, con los datos de la sección 4, en un repositorio privado de GitHub. La petición lleva tu dirección IP. Solo ocurre cuando envías feedback.</li>
       <li><strong>Eliminar tu cuenta</strong>: una llamada a nuestro servidor que borra la cuenta.</li>
     </ul>
     <p>Esa es la lista completa. IpsoFit no envía telemetría, estadísticas de uso, informes de
@@ -117,7 +117,7 @@
       <tr><td>Supabase, Inc.</td><td>Autenticación, la base de datos con los registros de cuenta de la sección 4, el almacenamiento de archivos que sirve las actualizaciones y la función de servidor que reenvía a GitHub el feedback que envías (el feedback no se guarda en Supabase).</td><td>Nuestro proyecto está alojado en AWS en <strong>eu-west-1 (Irlanda, UE)</strong>. Supabase es una empresa de EE. UU.; su Anexo de tratamiento de datos con cláusulas contractuales tipo cubre cualquier acceso desde fuera de la UE.</td></tr>
       <tr><td>Resend, Inc.</td><td>Envía al administrador un correo por cada solicitud de acceso, con la dirección de correo solicitante.</td><td>Estados Unidos. En ese mensaje solo van tu dirección de correo y los enlaces de la solicitud.</td></tr>
       <tr><td>Google LLC</td><td>Proveedor de identidad, solo si eliges "Iniciar sesión con Google".</td><td>Según la política de privacidad de Google.</td></tr>
-      <tr><td>GitHub, Inc.</td><td>Aloja este sitio web y la página que usa el administrador para confirmar una aprobación (GitHub Pages), y guarda el feedback que envías desde la app como incidencias en un repositorio privado al que solo accede el administrador.</td><td>Estados Unidos. GitHub Pages registra las IP de los visitantes por seguridad según la declaración de privacidad de GitHub. El feedback se guarda en los servidores de GitHub en Estados Unidos. GitHub está certificado en el Marco de Privacidad de Datos UE-EE. UU. (con su extensión para el Reino Unido) y además usa las cláusulas contractuales tipo de la Comisión Europea, que cubren la transferencia.</td></tr>
+      <tr><td>GitHub, Inc.</td><td>Aloja este sitio web y la página que usa el administrador para confirmar una aprobación (GitHub Pages), y guarda el feedback que envías desde la app como incidencias, con las capturas como archivos, en un repositorio privado al que solo accede el administrador.</td><td>Estados Unidos. GitHub Pages registra las IP de los visitantes por seguridad según la declaración de privacidad de GitHub. El feedback se guarda en los servidores de GitHub en Estados Unidos. GitHub está certificado en el Marco de Privacidad de Datos UE-EE. UU. (con su extensión para el Reino Unido) y además usa las cláusulas contractuales tipo de la Comisión Europea, que cubren la transferencia.</td></tr>
     </table>
     <p>No vendemos datos personales, no los compartimos con anunciantes y no los usamos para
       elaborar perfiles.</p>
@@ -128,7 +128,7 @@
         cerremos al terminar la beta. La eliminación borra de inmediato la cuenta, su perfil y
         cualquier solicitud pendiente.</li>
       <li><strong>Registros de solicitud de acceso</strong>: se borran al aprobar o rechazar la solicitud.</li>
-      <li><strong>Feedback</strong>: se conserva mientras sirva para arreglar o mejorar la app. Los problemas e ideas que abordamos se copian a nuestras notas de desarrollo privadas sin tu email. Borrar tu cuenta no borra el feedback que ya enviaste; pídenoslo (sección 8) y lo borramos.</li>
+      <li><strong>Feedback</strong> (capturas incluidas): se conserva mientras sirva para arreglar o mejorar la app. Los problemas e ideas que abordamos se copian a nuestras notas de desarrollo privadas sin tu email. Borrar tu cuenta no borra el feedback que ya enviaste; pídenoslo (sección 8) y lo borramos.</li>
       <li><strong>Registros de autenticación</strong>: un periodo limitado fijado por Supabase,
         tras el cual se purgan automáticamente.</li>
       <li><strong>Copias de seguridad del proveedor</strong>: Supabase conserva copias rutinarias
