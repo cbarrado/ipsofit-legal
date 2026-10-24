@@ -8,6 +8,7 @@ Public pages for IpsoFit (repo codename FocusFit — [cbarrado/FocusFit](https:/
 | `privacy.html` / `privacy.es.html` | Privacy Policy (EN / ES) |
 | `terms.html` / `terms.es.html` | Terms of Use (EN / ES) |
 | `disclaimer.html` / `disclaimer.es.html` | Medical & Safety Disclaimer (EN / ES) — the in-app first-launch health acknowledgment links here |
+| `delete-account.html` / `delete-account.es.html` | Account deletion web page (EN / ES) required by Google Play's data-deletion policy: in-app path, email route, what is deleted and kept. Linked from the Privacy Policy |
 | `approve.html` | Confirmation page for the beta access-approval emails. Reads `uid`, `token`, `action` from the query string and POSTs them to the `decide-approval` Supabase Edge Function. Hosted here because Supabase serves Edge Function HTML on `*.supabase.co` as `text/plain`. |
 
 No build step. Every page is plain HTML sharing `style.css`.
