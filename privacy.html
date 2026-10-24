@@ -23,7 +23,7 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <p class="updated">Version 1.6 — last updated 23 October 2026</p>
+    <p class="updated">Version 1.7 — last updated 23 October 2026</p>
 
     <div class="banner">Your workouts never leave your device.
       <span class="sub">IpsoFit keeps exercise sessions, sets, statistics and settings in a local
@@ -44,7 +44,7 @@
         you signed in, your role and access status, and a subscription tier field that is
         currently unused.</li>
       <li><strong>No analytics, no advertising, no crash reporting, no tracking.</strong></li>
-      <li><strong>Feedback is opt-in.</strong> If you send a report from the app, it goes with your email address and app version to a private GitHub repository only the administrator can see. Please don't include health details in it.</li>
+      <li><strong>Feedback is opt-in.</strong> If you send a report from the app, it goes with your email address, the app version and any screenshots you attach to a private GitHub repository only the administrator can see. Please don't include health details in it or in the screenshots.</li>
       <li>Our servers are hosted by Supabase in the <strong>European Union (AWS eu-west-1, Ireland)</strong>.</li>
       <li>You can <strong>delete your account from inside the app</strong> at any time, and export
         your local data on desktop.</li>
@@ -75,7 +75,7 @@
       <tr><td>Access request record: your email plus a one-time token, only while your request is pending</td><td>Powers the administrator's approve / reject links. Deleted the moment a decision is made.</td></tr>
       <tr><td>Authentication logs: IP address, device/browser identifier and timestamps of sign-in events</td><td>Kept by our authentication provider for security and abuse prevention, for a limited period set by the provider.</td></tr>
       <tr><td>Session tokens</td><td>Stored on your device so you stay signed in; refreshed automatically.</td></tr>
-      <tr><td>Feedback you choose to send from the app: your message, the type you picked (problem, idea or other), your email address, account identifier and role, the app version, platform (Android or Windows), app language and the time you sent it</td><td>Lets us read, reproduce and fix what you report, and reply to you by email. Sent only when you press Send; stored as an issue in a private GitHub repository only the administrator can access. Please don't include health details in feedback.</td></tr>
+      <tr><td>Feedback you choose to send from the app: your message, the type you picked (problem, idea or other), your email address, account identifier and role, the app version, platform (Android or Windows), app language and the time you sent it, plus up to three screenshots you choose to attach</td><td>Lets us read, reproduce and fix what you report, and reply to you by email. Sent only when you press Send; stored as an issue, with any screenshots as files, in a private GitHub repository only the administrator can access. Please don't include health details in feedback or screenshots.</td></tr>
     </table>
     <p><strong>Legal basis.</strong> We process this data to provide the service you asked for
       and to run the beta under the <a href="terms.html">Terms of Use</a> (performance of a
@@ -98,7 +98,7 @@
         the app asks our download storage (Supabase Storage) whether a newer version exists.
         The request carries your IP address and the app version. On Windows installer builds
         the update itself is downloaded from the same storage; other builds show a download link.</li>
-      <li><strong>Sending feedback</strong> — when you press Send on the feedback screen, one call to our server (Supabase), which files your message, with the details listed in section 4, in a private GitHub repository. The request carries your IP address. Only happens when you send feedback.</li>
+      <li><strong>Sending feedback</strong> — when you press Send on the feedback screen, one call to our server (Supabase), which files your message and any screenshots you attached, with the details listed in section 4, in a private GitHub repository. The request carries your IP address. Only happens when you send feedback.</li>
       <li><strong>Deleting your account</strong> — one call to our server that removes your account.</li>
     </ul>
     <p>That is the complete list. IpsoFit does not send telemetry, usage statistics, crash
@@ -111,7 +111,7 @@
       <tr><td>Supabase, Inc.</td><td>Authentication, the database holding the account records in section 4, the file storage that serves app updates, and the server function that passes the feedback you send on to GitHub (feedback is not stored at Supabase).</td><td>Our project is hosted on AWS in <strong>eu-west-1 (Ireland, EU)</strong>. Supabase is a US company; its Data Processing Addendum with standard contractual clauses covers any access from outside the EU.</td></tr>
       <tr><td>Resend, Inc.</td><td>Sends the administrator one email per access request, containing the requesting email address.</td><td>United States. Only your email address and the request links are in that message.</td></tr>
       <tr><td>Google LLC</td><td>Identity provider, only if you choose "Sign in with Google".</td><td>Per Google's privacy policy.</td></tr>
-      <tr><td>GitHub, Inc.</td><td>Hosts this website and the page the administrator uses to confirm an approval (GitHub Pages), and stores the feedback you send from the app as issues in a private repository only the administrator can access.</td><td>United States. GitHub Pages records visitor IP addresses for security under GitHub's privacy statement. Feedback is stored on GitHub's servers in the United States. GitHub is certified under the EU-U.S. Data Privacy Framework (with its UK Extension) and also relies on the European Commission's standard contractual clauses, which cover the transfer.</td></tr>
+      <tr><td>GitHub, Inc.</td><td>Hosts this website and the page the administrator uses to confirm an approval (GitHub Pages), and stores the feedback you send from the app as issues, with any screenshots as files, in a private repository only the administrator can access.</td><td>United States. GitHub Pages records visitor IP addresses for security under GitHub's privacy statement. Feedback is stored on GitHub's servers in the United States. GitHub is certified under the EU-U.S. Data Privacy Framework (with its UK Extension) and also relies on the European Commission's standard contractual clauses, which cover the transfer.</td></tr>
     </table>
     <p>We do not sell personal data, share it with advertisers, or use it for profiling.</p>
 
@@ -121,7 +121,7 @@
         after the beta ends. Deletion removes the account, its profile and any pending request
         immediately.</li>
       <li><strong>Access request records</strong> — deleted when the request is approved or rejected.</li>
-      <li><strong>Feedback</strong> — kept until it is no longer needed to fix or improve the app. Problems and ideas we act on are copied into our private development notes without your email address. Deleting your account does not delete feedback you already sent; ask us (section 8) and we will delete it.</li>
+      <li><strong>Feedback</strong> (screenshots included) — kept until it is no longer needed to fix or improve the app. Problems and ideas we act on are copied into our private development notes without your email address. Deleting your account does not delete feedback you already sent; ask us (section 8) and we will delete it.</li>
       <li><strong>Authentication logs</strong> — a limited period set by Supabase, after which
         they are purged automatically.</li>
       <li><strong>Provider backups</strong> — Supabase keeps routine database backups for a short
