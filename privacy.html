@@ -23,7 +23,7 @@
 
   <main>
     <h1>Privacy Policy</h1>
-    <p class="updated">Version 1.8 — last updated 24 October 2026</p>
+    <p class="updated">Version 1.9 — last updated 27 October 2026</p>
 
     <div class="banner">Your workouts never leave your device.
       <span class="sub">IpsoFit keeps exercise sessions, sets, statistics and settings in a local
@@ -69,7 +69,7 @@
       approves your request. For that, and for any feedback you choose to send, we process:</p>
     <table>
       <tr><th>Data</th><th>Why</th></tr>
-      <tr><td>Email address</td><td>Identifies your account; lets us notify the administrator of your access request and contact you about it.</td></tr>
+      <tr><td>Email address</td><td>Identifies your account; lets us notify the administrator of your access request, send you the account emails described in section 6 if you sign up with email and password, and contact you about your request.</td></tr>
       <tr><td>Sign-in method and, for Google sign-in, the identifier and basic profile information Google shares (name, profile picture URL)</td><td>Authenticates you. Stored by our authentication provider as part of the identity record.</td></tr>
       <tr><td>Role (user, tester or admin), access status (pending, approved or rejected) and a subscription tier (unused during the beta)</td><td>Controls what the app lets you do. Included as claims in your sign-in token.</td></tr>
       <tr><td>Access request record: your email plus a one-time token, only while your request is pending</td><td>Powers the administrator's approve / reject links. Deleted the moment a decision is made.</td></tr>
@@ -109,7 +109,7 @@
     <table>
       <tr><th>Provider</th><th>What they do for us</th><th>Where</th></tr>
       <tr><td>Supabase, Inc.</td><td>Authentication, the database holding the account records in section 4, the file storage that serves app updates, and the server function that passes the feedback you send on to GitHub (feedback is not stored at Supabase).</td><td>Our project is hosted on AWS in <strong>eu-west-1 (Ireland, EU)</strong>. Supabase is a US company; its Data Processing Addendum with standard contractual clauses covers any access from outside the EU.</td></tr>
-      <tr><td>Resend, Inc.</td><td>Sends the administrator one email per access request, containing the requesting email address.</td><td>United States. Only your email address and the request links are in that message.</td></tr>
+      <tr><td>Resend, Inc.</td><td>Sends the administrator one email per access request, containing the requesting email address. Also delivers the account emails our authentication provider sends to people who sign up with email and password: the confirmation link and, if you ask for it, a password-reset link.</td><td>United States. Only your email address and the request links are in the administrator message; an account email contains your email address and its link.</td></tr>
       <tr><td>Google LLC</td><td>Identity provider, only if you choose "Sign in with Google".</td><td>Per Google's privacy policy.</td></tr>
       <tr><td>GitHub, Inc.</td><td>Hosts this website and the page the administrator uses to confirm an approval (GitHub Pages), and stores the feedback you send from the app as issues, with any screenshots as files, in a private repository only the administrator can access.</td><td>United States. GitHub Pages records visitor IP addresses for security under GitHub's privacy statement. Feedback is stored on GitHub's servers in the United States. GitHub is certified under the EU-U.S. Data Privacy Framework (with its UK Extension) and also relies on the European Commission's standard contractual clauses, which cover the transfer.</td></tr>
     </table>
