@@ -4,7 +4,7 @@ Public pages for IpsoFit (repo codename FocusFit — [cbarrado/FocusFit](https:/
 
 | Page | Purpose |
 |------|---------|
-| `index.html` / `index.es.html` | Landing page (EN / ES) at `https://ipsofit.com/`, styled by `site.css`. Screenshots in `img/<lang>/` are the Play listing set (FocusFit `assets/branding/play/screenshots/`), frame cropped and halved to 470 × 900. The beta call to action is a `mailto:` to `support@ipsofit.com` until the app is public |
+| `index.html` / `index.es.html` | Landing page (EN / ES) at `https://ipsofit.com/`: hero, a tabbed tour of the six home-screen features, more features, closed-beta call to action (`mailto:support@ipsofit.com` until the app is public), FAQ. Styled by `site.css`; light by default, the header toggle switches to dark (`theme.js` applies the saved choice before first paint, `site.js` runs the toggle and the tabs). Screenshots in `img/<lang>/<light|dark>/` come from the desktop app in a 412 × 789 viewport at 1.5×, with the dev badge and the account photo removed |
 | `legal.html` / `legal.es.html` | Legal index |
 | `privacy.html` / `privacy.es.html` | Privacy Policy (EN / ES) |
 | `terms.html` / `terms.es.html` | Terms of Use (EN / ES) |
