@@ -40,4 +40,18 @@
   });
 
   if (tabs.length) select(tabs[0], false);
+
+  // Close the language menu on Escape or a click outside it, returning focus on Escape.
+  var langMenu = document.querySelector('.lang-menu');
+  if (langMenu) {
+    document.addEventListener('click', function (e) {
+      if (langMenu.open && !langMenu.contains(e.target)) langMenu.open = false;
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && langMenu.open) {
+        langMenu.open = false;
+        langMenu.querySelector('summary').focus();
+      }
+    });
+  }
 })();
