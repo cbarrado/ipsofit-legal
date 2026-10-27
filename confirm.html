@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>IpsoFit — Confirm your email</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6b4a'/%3E%3C/svg%3E">
+  <style>
+    body { font-family: system-ui, sans-serif; background: #2F384B; color: #fff; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+    main { max-width: 480px; padding: 32px 16px; }
+    h1 { font-size: 22px; margin: 0 0 8px; }
+    h2 { font-size: 18px; font-weight: 400; margin: 0 0 24px; color: #cfd6e4; }
+    p { font-size: 15px; margin: 0 0 24px; color: #cfd6e4; }
+    button { color: #fff; background: #16a34a; padding: 12px 24px; border: 0; border-radius: 8px; font-size: 16px; cursor: pointer; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>IpsoFit</h1>
+    <h2 id="message"></h2>
+    <p id="warning" hidden></p>
+    <button id="confirm" hidden>Confirm my email</button>
+  </main>
+  <script>
+    const VERIFY_URL = "https://zldmzmoskjabdmmewshv.supabase.co/auth/v1/verify";
+    const CONFIRMED_URL = "https://ipsofit.com/confirmed.html";
+    const WARNING = "Only confirm if you just created an IpsoFit account with this email address.";
+    const INCOMPLETE = "This link is incomplete. Open IpsoFit and ask for a new one.";
+
+    const params = new URLSearchParams(location.hash.slice(1));
+    const tokenHash = params.get("token_hash") || "";
+    const valid = /^[A-Za-z0-9_-]+$/.test(tokenHash) && params.get("type") === "signup";
+
+    const message = document.getElementById("message");
+    const warning = document.getElementById("warning");
+    const confirm = document.getElementById("confirm");
+
+    if (valid) {
+      warning.textContent = WARNING;
+      warning.hidden = false;
+      confirm.hidden = false;
+    } else {
+      message.textContent = INCOMPLETE;
+    }
+
+    confirm.addEventListener("click", () => {
+      if (!valid) return;
+      const query = new URLSearchParams({ token: tokenHash, type: "signup", redirect_to: CONFIRMED_URL });
+      location.assign(`${VERIFY_URL}?${query}`);
+    });
+  </script>
+</body>
+</html>
