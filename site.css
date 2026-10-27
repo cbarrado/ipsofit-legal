@@ -341,5 +341,5 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 
 /* Two phones in one panel: the second sits lower so they read as a sequence. */
 .shot.pair { gap: 16px; align-items: flex-start; }
-.shot.pair .phone { flex: 1 1 0; min-width: 0; max-width: 240px; }
+.shot.pair .phone { flex: 1 1 0; min-width: 0; max-width: 216px; }
 .shot.pair .second { margin-top: 56px; }
