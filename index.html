@@ -1,61 +1,294 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IpsoFit — Legal</title>
-<meta name="description" content="Legal documents for IpsoFit: Privacy Policy, Terms of Use, and Medical &amp; Safety Disclaimer, in English and Spanish.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6b4a'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+<title>IpsoFit — Exercise snacks for busy days</title>
+<meta name="description" content="IpsoFit fits movement into the gaps in your day: one move under a minute, or a full workout built in a few taps from a library of more than 600 exercises. Android and Windows, in closed beta.">
+<link rel="canonical" href="https://ipsofit.com/">
+<link rel="alternate" hreflang="en" href="https://ipsofit.com/">
+<link rel="alternate" hreflang="es" href="https://ipsofit.com/index.es.html">
+<meta property="og:title" content="IpsoFit — Exercise snacks for busy days">
+<meta property="og:description" content="One move under a minute, or a full workout built in a few taps.">
+<meta property="og:url" content="https://ipsofit.com/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f5f7fa">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="theme.js"></script>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="site">
-    <a class="brand" href="index.html">IpsoFit</a>
-    <nav class="pages">
-      <a href="index.html" aria-current="page">Legal</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="IpsoFit home">
+      <svg viewBox="0 0 1024 1024" aria-hidden="true"><defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b3446"/><stop offset="1" stop-color="#12161f"/></linearGradient></defs><rect width="1024" height="1024" rx="225" fill="url(#tile)"/><circle cx="594" cy="266" r="102" fill="#ffd23f"/><rect x="389" y="410" width="246" height="471" rx="123" fill="#fff" transform="rotate(-20 512 645)"/></svg>
+      <span><span class="ipso">Ipso</span><span class="fit">Fit</span></span>
+    </a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <details class="lang-menu">
+        <summary aria-label="Language: English"><svg class="flag" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbcs"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="gbts"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#gbcs)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#gbts)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg><span>EN</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ul>
+          <li><a href="index.html" lang="en" hreflang="en" aria-current="page"><svg class="flag" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="gbt"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#gbc)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#gbt)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>English</a></li>
+          <li><a href="index.es.html" lang="es" hreflang="es"><svg class="flag" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 0h60v40H0z" fill="#AA151B"/><path d="M0 10h60v20H0z" fill="#F1BF00"/></svg>Español</a></li>
+        </ul>
+      </details>
+      <button class="theme-toggle" type="button" aria-label="Dark theme" aria-pressed="false">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="btn" href="#join">Join the beta</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+  <div class="hero">
+    <div>
+      <span class="pill">Closed beta · Android and Windows</span>
+      <h1>Exercise snacks for busy days.</h1>
+      <p class="lead">One move, under a minute, picked at random so it stays fresh. Got longer?
+        Build a full workout in a few taps.</p>
+      <div class="ctas">
+        <a class="btn" href="#join">Join the beta</a>
+        <a class="btn ghost" href="#features">See the features</a>
+      </div>
+      <p class="fine">Android phones and Windows PCs · English and Spanish</p>
+      <ul class="chips">
+        <li>Workout data stays on your device</li>
+        <li>Bodyweight works anywhere</li>
+        <li>Light and dark themes</li>
+      </ul>
+    </div>
+    <div class="shot">
+      <img class="phone light-only" src="img/en/light/home.png" width="618" height="1184" alt="IpsoFit home screen: an exercise snack card with a Go button, then Workout, Mobility, Stretch muscle, Eye rest, Pomodoro and Nudges.">
+      <img class="phone dark-only" src="img/en/dark/home.png" width="618" height="1184" loading="lazy" alt="IpsoFit home screen: an exercise snack card with a Go button, then Workout, Mobility, Stretch muscle, Eye rest, Pomodoro and Nudges.">
+    </div>
+  </div>
+
+  <div class="numbers">
+    <div><strong>600+ <small>exercises</small></strong><span>in the library</span></div>
+    <div><strong>&lt;1 <small>min</small></strong><span>for a single move</span></div>
+    <div><strong>5 <small>formats</small></strong><span>mixed into every workout</span></div>
+  </div>
+
+  <section id="features">
+    <p class="eyebrow">Features</p>
+    <h2>Everything on the home screen.</h2>
+    <p class="sub">Six ways to move, one tap away. Pick one to see what it does.</p>
+
+    <div class="tabs" role="tablist" aria-label="Features">
+      <button class="tab" type="button" role="tab" id="tab-snacks" aria-controls="panel-snacks" aria-selected="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="m8.5 8.5 7 7"/><path d="M8.5 15.5 2 17.4 6.6 22z"/><path d="M15.5 8.5 17.4 2 22 6.6z"/></svg>Snacks</button>
+      <button class="tab" type="button" role="tab" id="tab-workouts" aria-controls="panel-workouts" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg>Workouts</button>
+      <button class="tab" type="button" role="tab" id="tab-mobility" aria-controls="panel-mobility" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="m5 7 7 3 7-3"/><path d="M12 10v4l-4 8"/><path d="m12 14 4 8"/></svg>Mobility</button>
+      <button class="tab" type="button" role="tab" id="tab-stretch" aria-controls="panel-stretch" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Stretch</button>
+      <button class="tab" type="button" role="tab" id="tab-eyes" aria-controls="panel-eyes" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Eye rest</button>
+      <button class="tab" type="button" role="tab" id="tab-nudges" aria-controls="panel-nudges" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>Nudges</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-snacks" aria-labelledby="tab-snacks" tabindex="0">
+      <div>
+        <h3 class="panel-title">Exercise snacks</h3>
+        <p class="sub">One move for any break or spare moment in your day.</p>
+        <ul>
+          <li><strong>Bite:</strong> one move, under a minute.</li>
+          <li><strong>Plate:</strong> about five minutes of guided work.</li>
+          <li><strong>À la carte:</strong> set your own duration, sets and rest.</li>
+          <li>Picked at random so it stays fresh. Swap the exercise before you start.</li>
+          <li>Every snack move has an animated figure showing how to do it.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/en/light/snack.png" width="618" height="1184" loading="lazy" alt="The snack screen: shoulder CARs for 60 seconds, a swap button, the Bite, Plate and À la carte options, and Start.">
+        <img class="phone dark-only" src="img/en/dark/snack.png" width="618" height="1184" loading="lazy" alt="The snack screen: a walking figure-4 for 60 seconds, a swap button, the Bite, Plate and À la carte options, and Start.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-workouts" aria-labelledby="tab-workouts" tabindex="0">
+      <div>
+        <h3 class="panel-title">Build your own workout</h3>
+        <p class="sub">Pick the length. IpsoFit builds the rest.</p>
+        <ul>
+          <li>Choose the duration, focus and intensity.</li>
+          <li>Full body, upper body, lower body or core.</li>
+          <li>Mixes EMOM, Tabata, AMRAP, HIIT circuits and supersets.</li>
+          <li>Optional warm-up and cooldown.</li>
+          <li><strong>Wherever you are:</strong> bodyweight only when you are out, or the equipment you have at home or the gym. Tell it where you are and it picks only moves you can do.</li>
+          <li>Review the plan, swap a move or regenerate it.</li>
+        </ul>
+      </div>
+      <div class="shot pair">
+        <img class="phone light-only" src="img/en/light/workout-setup.png" width="618" height="1184" loading="lazy" alt="Workout plan setup: duration, emphasis, intensity, add-ons and equipment.">
+        <img class="phone dark-only" src="img/en/dark/workout-setup.png" width="618" height="1184" loading="lazy" alt="Workout plan setup: duration, emphasis, intensity, add-ons and equipment.">
+        <img class="phone light-only" src="img/en/light/workout.png" width="618" height="1184" loading="lazy" alt="A generated workout plan: each move with its demo and time, and buttons to swap or reorder it.">
+        <img class="phone dark-only" src="img/en/dark/workout.png" width="618" height="1184" loading="lazy" alt="A generated workout plan: each move with its demo and time, and buttons to swap or reorder it.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-mobility" aria-labelledby="tab-mobility" tabindex="0">
+      <div>
+        <h3 class="panel-title">Mobility sessions</h3>
+        <p class="sub">Moves made for mobility, start to finish.</p>
+        <ul>
+          <li>100 exercises made specifically for mobility.</li>
+          <li>Choose the duration and the emphasis: full body, upper body, lower body or core.</li>
+          <li>Uses only the equipment you have, or none at all.</li>
+          <li>Every move comes with an animated demo.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/en/light/mobility.png" width="618" height="1184" loading="lazy" alt="A mobility session running, with the animated demo of the current move.">
+        <img class="phone dark-only" src="img/en/dark/mobility.png" width="618" height="1184" loading="lazy" alt="A mobility session running, with the animated demo of the current move.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-stretch" aria-labelledby="tab-stretch" tabindex="0">
+      <div>
+        <h3 class="panel-title">Stretch a muscle</h3>
+        <p class="sub">Tap the area that feels tight. Get a short routine for it.</p>
+        <ul>
+          <li>Front and back body map: tap the muscle you want to stretch.</li>
+          <li>Two or three movements, built for that muscle.</li>
+          <li>Set the duration and the rest between movements, or leave them on auto.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/en/light/stretch.png" width="618" height="1184" loading="lazy" alt="Stretch a muscle: a front and back body map with the quadriceps selected, and the routine's duration and rest.">
+        <img class="phone dark-only" src="img/en/dark/stretch.png" width="618" height="1184" loading="lazy" alt="Stretch a muscle: a front and back body map with the quadriceps selected, and the routine's duration and rest.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-eyes" aria-labelledby="tab-eyes" tabindex="0">
+      <div>
+        <h3 class="panel-title">Eye rest</h3>
+        <p class="sub">Short exercises for screen-heavy days.</p>
+        <ul>
+          <li>A guided block you can start any time from the home screen.</li>
+          <li>Moves such as figure-eight tracing, with a timer that paces you.</li>
+          <li>Pair it with an eye-rest nudge so you do not have to remember.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/en/light/eye-rest.png" width="618" height="1184" loading="lazy" alt="An eye-rest block running: figure-eight tracing on a 2-minute timer.">
+        <img class="phone dark-only" src="img/en/dark/eye-rest.png" width="618" height="1184" loading="lazy" alt="An eye-rest block running: figure-eight tracing on a 2-minute timer.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-nudges" aria-labelledby="tab-nudges" tabindex="0">
+      <div>
+        <h3 class="panel-title">Nudges</h3>
+        <p class="sub">Reminders to move and to rest your eyes, on your schedule.</p>
+        <ul>
+          <li><strong>Snack nudge:</strong> every few minutes, a nudge to get up and do an exercise snack.</li>
+          <li><strong>Eye-rest nudge:</strong> a reminder to look into the distance for 20 seconds.</li>
+          <li>Pick the interval, line nudges up with the clock, and snooze when you are busy.</li>
+          <li>Limit them to your working hours if you like.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/en/light/nudges.png" width="618" height="1184" loading="lazy" alt="Nudge settings: snack and eye-rest intervals, mode, snooze and working hours.">
+        <img class="phone dark-only" src="img/en/dark/nudges.png" width="618" height="1184" loading="lazy" alt="Nudge settings: snack and eye-rest intervals, mode, snooze and working hours.">
+      </div>
+    </div>
+  </section>
+
+  <section id="more">
+    <p class="eyebrow">And more</p>
+    <h2>Small details that keep you moving.</h2>
+    <div class="grid">
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M10 2h4"/></svg>
+        <h3>Focus timer</h3>
+        <p>A built-in Pomodoro timer runs focus rounds with short breaks. A break can end with an exercise snack.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        <h3>Stats and body map</h3>
+        <p>Today and this week: blocks, sets, workouts, and the muscles you worked on a front and back body map.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6v12M18 6v12M3 9v6M21 9v6M6 12h12"/></svg>
+        <h3>Works with what you have</h3>
+        <p>Tell IpsoFit your equipment and it picks only moves you can do. Bodyweight only works in an office, a hotel room or a park.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        <h3>Backup and restore</h3>
+        <p>Your history stays on your device. Export it to a backup file and restore it whenever you like.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M12 3a9 9 0 0 1 0 18"/></svg>
+        <h3>Light or dark, English or Spanish</h3>
+        <p>Follow your system or pick a theme and a language yourself.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5a2 2 0 0 1 2-2h5a3 3 0 0 1 3 3v15a2 2 0 0 0-2-2H2z"/><path d="M22 5a2 2 0 0 0-2-2h-5a3 3 0 0 0-3 3v15a2 2 0 0 1 2-2h8z"/></svg>
+        <h3>A library of 600+ exercises</h3>
+        <p>Every muscle group, from bodyweight to gym equipment. IpsoFit draws from all of it, so your sessions stay varied.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="join" id="join">
+    <p class="eyebrow">Closed beta</p>
+    <h2>Try IpsoFit before launch.</h2>
+    <p class="sub">Email us and say whether you use Android or Windows. For Android, send the Google
+      account you use on Google Play so we can add you to the test.</p>
+    <a class="btn" href="mailto:support@ipsofit.com?subject=IpsoFit%20beta&amp;body=Platform%20(Android%20or%20Windows)%3A%20%0AGoogle%20account%20email%20(Android%20only)%3A%20">Email support@ipsofit.com</a>
+  </div>
+
+  <section id="faq" class="faq">
+    <p class="eyebrow">Questions</p>
+    <h2>Good to know</h2>
+    <details>
+      <summary>Which devices does IpsoFit run on?</summary>
+      <p>Android phones and Windows PCs. The app is in English and Spanish.</p>
+    </details>
+    <details>
+      <summary>Where is my workout data stored?</summary>
+      <p>On your device. An account is used only to control access during the beta. See the
+        <a href="privacy.html">Privacy Policy</a> for the details.</p>
+    </details>
+    <details>
+      <summary>Do I need equipment?</summary>
+      <p>No. Choose bodyweight only and every move works in an office, a hotel room or a park. Add
+        the equipment you have and IpsoFit uses it too.</p>
+    </details>
+    <details>
+      <summary>How do I join the beta?</summary>
+      <p>Email <a href="mailto:support@ipsofit.com?subject=IpsoFit%20beta">support@ipsofit.com</a>
+        with your platform. Android testers also send the Google account they use on Google Play.</p>
+    </details>
+    <details>
+      <summary>Is IpsoFit medical advice?</summary>
+      <p>No. IpsoFit plans sports exercise and does not know your health. Read the
+        <a href="disclaimer.html">Medical &amp; Safety Disclaimer</a> before your first block.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Legal">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="disclaimer.html">Disclaimer</a>
-      <a class="lang" href="index.es.html" lang="es" hreflang="es">Español</a>
+      <a href="delete-account.html">Delete your account</a>
+      <a href="legal.html">Legal</a>
+      <a href="index.es.html" lang="es" hreflang="es">Español</a>
     </nav>
-  </header>
-
-  <main>
-    <h1>Legal</h1>
-    <p>IpsoFit is a Pomodoro app for Windows and Android that turns short breaks into
-      five-minute exercise blocks, generating randomised workouts and stretching routines.
-      Your workout data stays on your device; an account is used only to control access
-      during the beta. These pages set out how IpsoFit handles your data, the terms of
-      use, and the health and safety notice you accept before exercising.</p>
-
-    <div class="index-links">
-      <a href="privacy.html">
-        Privacy Policy
-        <span>What data the app processes, where it lives, who our providers are, and your rights.</span>
-      </a>
-      <a href="terms.html">
-        Terms of Use
-        <span>The agreement that governs your use of IpsoFit during the beta.</span>
-      </a>
-      <a href="disclaimer.html">
-        Medical &amp; Safety Disclaimer
-        <span>IpsoFit plans sports exercise. Read this before your first block.</span>
-      </a>
-      <a href="delete-account.html">
-        Delete your account
-        <span>How to delete your account, in the app or by email, and what is kept.</span>
-      </a>
-    </div>
-
-    <p class="updated" style="margin-top:32px">Todas las páginas están disponibles también en
-      <a href="index.es.html" lang="es">español</a>.</p>
-  </main>
-
-  <footer class="site">
-    <p>IpsoFit is developed by Carlos Barrado. Contact: <a href="mailto:support@ipsofit.com">support@ipsofit.com</a>.<br>
-      Page structure adapted from <a href="https://github.com/OpenStrap/edge">OpenStrap/edge</a> (MIT).</p>
-  </footer>
-</div>
+    <p>IpsoFit plans sports exercise. Consult a healthcare professional before starting and stop at once if something feels wrong.</p>
+    <p>© 2026 Ipsofit · <a href="mailto:support@ipsofit.com">support@ipsofit.com</a></p>
+  </div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>
