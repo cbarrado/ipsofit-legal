@@ -4,14 +4,15 @@ Public pages for IpsoFit (repo codename FocusFit — [cbarrado/FocusFit](https:/
 
 | Page | Purpose |
 |------|---------|
-| `index.html` / `index.es.html` | Legal index |
+| `index.html` / `index.es.html` | Landing page (EN / ES) at `https://ipsofit.com/`, styled by `site.css`. Screenshots in `img/<lang>/` are the Play listing set (FocusFit `assets/branding/play/screenshots/`), frame cropped and halved to 470 × 900. The beta call to action is a `mailto:` to `support@ipsofit.com` until the app is public |
+| `legal.html` / `legal.es.html` | Legal index |
 | `privacy.html` / `privacy.es.html` | Privacy Policy (EN / ES) |
 | `terms.html` / `terms.es.html` | Terms of Use (EN / ES) |
 | `disclaimer.html` / `disclaimer.es.html` | Medical & Safety Disclaimer (EN / ES) — the in-app first-launch health acknowledgment links here |
 | `delete-account.html` / `delete-account.es.html` | Account deletion web page (EN / ES) required by Google Play's data-deletion policy: in-app path, email route, what is deleted and kept. Linked from the Privacy Policy |
 | `approve.html` | Confirmation page for the beta access-approval emails. Reads `uid`, `token`, `action` from the query string and POSTs them to the `decide-approval` Supabase Edge Function. Hosted here because Supabase serves Edge Function HTML on `*.supabase.co` as `text/plain`. |
 
-No build step. Every page is plain HTML sharing `style.css`.
+No build step. Every legal page is plain HTML sharing `style.css`; the landing page uses `site.css`.
 
 ## Attribution
 
