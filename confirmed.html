@@ -21,15 +21,14 @@
   <script>
     const CONFIRMED = "Email confirmed. Go back to IpsoFit and sign in.";
     const EXPIRED = "This link has expired or was already used. Open IpsoFit and ask for a new one.";
+    const NEUTRAL = "Done. Go back to IpsoFit and sign in. If sign-in fails, ask the app for a new link.";
 
-    let failed = false;
-    try {
-      const params = new URLSearchParams(`${location.search.slice(1)}&${location.hash.slice(1)}`);
-      failed = ["error", "error_code", "error_description"].some((key) => params.has(key));
-    } catch (_) {
-      // malformed hash: show the success view
-    }
-    document.getElementById("message").textContent = failed ? EXPIRED : CONFIRMED;
+    const query = new URLSearchParams(location.search.slice(1));
+    const hash = new URLSearchParams(location.hash.slice(1));
+    const failed = ["error", "error_code", "error_description"].some((key) => query.has(key) || hash.has(key));
+    const succeeded = query.has("code") || hash.has("access_token");
+    document.getElementById("message").textContent = failed ? EXPIRED : succeeded ? CONFIRMED : NEUTRAL;
+    history.replaceState(null, "", location.pathname);
   </script>
 </body>
 </html>

@@ -11,6 +11,7 @@
     main { max-width: 480px; padding: 32px 16px; }
     h1 { font-size: 22px; margin: 0 0 8px; }
     h2 { font-size: 18px; font-weight: 400; margin: 0 0 24px; color: #cfd6e4; }
+    p { font-size: 15px; margin: 0 0 24px; color: #cfd6e4; }
     button { color: #fff; background: #16a34a; padding: 12px 24px; border: 0; border-radius: 8px; font-size: 16px; cursor: pointer; }
     [hidden] { display: none !important; }
   </style>
@@ -19,26 +20,26 @@
   <main>
     <h1>IpsoFit</h1>
     <h2 id="message"></h2>
+    <p id="warning" hidden></p>
     <button id="confirm" hidden>Confirmar mi email</button>
   </main>
   <script>
     const VERIFY_URL = "https://zldmzmoskjabdmmewshv.supabase.co/auth/v1/verify";
     const CONFIRMED_URL = "https://ipsofit.com/confirmed.es.html";
+    const WARNING = "Confirma solo si acabas de crear una cuenta de IpsoFit con este email.";
     const INCOMPLETE = "Este enlace está incompleto. Abre IpsoFit y pide uno nuevo.";
 
-    let params = new URLSearchParams();
-    try {
-      params = new URLSearchParams(location.hash.slice(1));
-    } catch (_) {
-      // malformed hash: treated as an incomplete link
-    }
+    const params = new URLSearchParams(location.hash.slice(1));
     const tokenHash = params.get("token_hash") || "";
     const valid = /^[A-Za-z0-9_-]+$/.test(tokenHash) && params.get("type") === "signup";
 
     const message = document.getElementById("message");
+    const warning = document.getElementById("warning");
     const confirm = document.getElementById("confirm");
 
     if (valid) {
+      warning.textContent = WARNING;
+      warning.hidden = false;
       confirm.hidden = false;
     } else {
       message.textContent = INCOMPLETE;
