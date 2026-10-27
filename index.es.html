@@ -1,62 +1,294 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IpsoFit — Legal</title>
-<meta name="description" content="Documentos legales de IpsoFit: Política de privacidad, Términos de uso y Aviso médico y de seguridad, en español e inglés.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6b4a'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+<title>IpsoFit — Snacks de ejercicio para días ocupados</title>
+<meta name="description" content="IpsoFit mete movimiento en los huecos de tu día: un movimiento en menos de un minuto o un entrenamiento completo en pocos toques, con una biblioteca de más de 600 ejercicios. Android y Windows, en beta cerrada.">
+<link rel="canonical" href="https://ipsofit.com/index.es.html">
+<link rel="alternate" hreflang="en" href="https://ipsofit.com/">
+<link rel="alternate" hreflang="es" href="https://ipsofit.com/index.es.html">
+<meta property="og:title" content="IpsoFit — Snacks de ejercicio para días ocupados">
+<meta property="og:description" content="Un movimiento en menos de un minuto o un entrenamiento completo en pocos toques.">
+<meta property="og:url" content="https://ipsofit.com/index.es.html">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#f5f7fa">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script src="theme.js"></script>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="site">
-    <a class="brand" href="index.es.html">IpsoFit</a>
-    <nav class="pages">
-      <a href="index.es.html" aria-current="page">Legal</a>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.es.html" aria-label="Inicio de IpsoFit">
+      <svg viewBox="0 0 1024 1024" aria-hidden="true"><defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b3446"/><stop offset="1" stop-color="#12161f"/></linearGradient></defs><rect width="1024" height="1024" rx="225" fill="url(#tile)"/><circle cx="594" cy="266" r="102" fill="#ffd23f"/><rect x="389" y="410" width="246" height="471" rx="123" fill="#fff" transform="rotate(-20 512 645)"/></svg>
+      <span><span class="ipso">Ipso</span><span class="fit">Fit</span></span>
+    </a>
+    <nav>
+      <a href="#features">Funciones</a>
+      <a href="#faq">Preguntas</a>
+      <details class="lang-menu">
+        <summary aria-label="Idioma: español"><svg class="flag" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 0h60v40H0z" fill="#AA151B"/><path d="M0 10h60v20H0z" fill="#F1BF00"/></svg><span>ES</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <ul>
+          <li><a href="index.html" lang="en" hreflang="en"><svg class="flag" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="gbt"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#gbc)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#gbt)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>English</a></li>
+          <li><a href="index.es.html" lang="es" hreflang="es" aria-current="page"><svg class="flag" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 0h60v40H0z" fill="#AA151B"/><path d="M0 10h60v20H0z" fill="#F1BF00"/></svg>Español</a></li>
+        </ul>
+      </details>
+      <button class="theme-toggle" type="button" aria-label="Tema oscuro" aria-pressed="false">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="btn" href="#join">Únete a la beta</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main" tabindex="-1">
+  <div class="hero">
+    <div>
+      <span class="pill">Beta cerrada · Android y Windows</span>
+      <h1>Snacks de ejercicio para días ocupados.</h1>
+      <p class="lead">Un movimiento, menos de un minuto, elegido al azar para no repetirte.
+        ¿Tienes más tiempo? Crea un entrenamiento completo en pocos toques.</p>
+      <div class="ctas">
+        <a class="btn" href="#join">Únete a la beta</a>
+        <a class="btn ghost" href="#features">Ver funciones</a>
+      </div>
+      <p class="fine">Móviles Android y PC con Windows · Español e inglés</p>
+      <ul class="chips">
+        <li>Tus entrenamientos se quedan en tu dispositivo</li>
+        <li>Con peso corporal vale cualquier sitio</li>
+        <li>Tema claro y oscuro</li>
+      </ul>
+    </div>
+    <div class="shot">
+      <img class="phone light-only" src="img/es/light/home.png" width="618" height="1184" alt="Pantalla de inicio de IpsoFit: una tarjeta de snack de ejercicio con el botón Vamos, y debajo Entrenamiento, Movilidad, Estirar músculo, Descanso visual, Pomodoro y Avisos.">
+      <img class="phone dark-only" src="img/es/dark/home.png" width="618" height="1184" loading="lazy" alt="Pantalla de inicio de IpsoFit: una tarjeta de snack de ejercicio con el botón Vamos, y debajo Entrenamiento, Movilidad, Estirar músculo, Descanso visual, Pomodoro y Avisos.">
+    </div>
+  </div>
+
+  <div class="numbers">
+    <div><strong>600+ <small>ejercicios</small></strong><span>en la biblioteca</span></div>
+    <div><strong>&lt;1 <small>min</small></strong><span>por movimiento</span></div>
+    <div><strong>5 <small>formatos</small></strong><span>combinados en cada entrenamiento</span></div>
+  </div>
+
+  <section id="features">
+    <p class="eyebrow">Funciones</p>
+    <h2>Todo en la pantalla de inicio.</h2>
+    <p class="sub">Seis formas de moverte, a un toque. Elige una para ver qué hace.</p>
+
+    <div class="tabs" role="tablist" aria-label="Funciones">
+      <button class="tab" type="button" role="tab" id="tab-snacks" aria-controls="panel-snacks" aria-selected="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="m8.5 8.5 7 7"/><path d="M8.5 15.5 2 17.4 6.6 22z"/><path d="M15.5 8.5 17.4 2 22 6.6z"/></svg>Snacks</button>
+      <button class="tab" type="button" role="tab" id="tab-workouts" aria-controls="panel-workouts" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg>Entrenamiento</button>
+      <button class="tab" type="button" role="tab" id="tab-mobility" aria-controls="panel-mobility" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="m5 7 7 3 7-3"/><path d="M12 10v4l-4 8"/><path d="m12 14 4 8"/></svg>Movilidad</button>
+      <button class="tab" type="button" role="tab" id="tab-stretch" aria-controls="panel-stretch" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Estirar</button>
+      <button class="tab" type="button" role="tab" id="tab-eyes" aria-controls="panel-eyes" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Descanso visual</button>
+      <button class="tab" type="button" role="tab" id="tab-nudges" aria-controls="panel-nudges" aria-selected="false" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>Avisos</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-snacks" aria-labelledby="tab-snacks" tabindex="0">
+      <div>
+        <h3 class="panel-title">Snacks de ejercicio</h3>
+        <p class="sub">Un movimiento para cualquier descanso o hueco durante el día.</p>
+        <ul>
+          <li><strong>Bocado:</strong> un movimiento, menos de un minuto.</li>
+          <li><strong>Ración:</strong> unos cinco minutos de trabajo guiado.</li>
+          <li><strong>A la carta:</strong> tú eliges duración, series y descanso.</li>
+          <li>Elegido al azar para no repetirte. Cambia el ejercicio antes de empezar.</li>
+          <li>Cada movimiento de los snacks trae una figura animada que enseña cómo hacerlo.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/es/light/snack.png" width="618" height="1184" loading="lazy" alt="La pantalla de snack: una sentadilla profunda de 60 segundos, el botón para cambiarla, las opciones Bocado, Ración y A la carta, y Empezar.">
+        <img class="phone dark-only" src="img/es/dark/snack.png" width="618" height="1184" loading="lazy" alt="La pantalla de snack: una flexión con rodilla al codo de 60 segundos, el botón para cambiarla, las opciones Bocado, Ración y A la carta, y Empezar.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-workouts" aria-labelledby="tab-workouts" tabindex="0">
+      <div>
+        <h3 class="panel-title">Crea tu entrenamiento</h3>
+        <p class="sub">Elige la duración. IpsoFit monta el resto.</p>
+        <ul>
+          <li>Elige duración, zona e intensidad.</li>
+          <li>Cuerpo completo, tren superior, tren inferior o core.</li>
+          <li>Combina EMOM, Tabata, AMRAP, circuitos HIIT y superseries.</li>
+          <li>Calentamiento y enfriamiento opcionales.</li>
+          <li><strong>Estés donde estés:</strong> solo peso corporal cuando estás fuera, o el material que tienes en casa o en el gimnasio. Dile dónde estás y solo elegirá movimientos que puedas hacer.</li>
+          <li>Revisa el plan, cambia un movimiento o genera otro.</li>
+        </ul>
+      </div>
+      <div class="shot pair">
+        <img class="phone light-only" src="img/es/light/workout-setup.png" width="618" height="1184" loading="lazy" alt="Configuración del entrenamiento: duración, zona, intensidad, extras y material.">
+        <img class="phone dark-only" src="img/es/dark/workout-setup.png" width="618" height="1184" loading="lazy" alt="Configuración del entrenamiento: duración, zona, intensidad, extras y material.">
+        <img class="phone light-only" src="img/es/light/workout.png" width="618" height="1184" loading="lazy" alt="Un plan de entrenamiento generado: cada movimiento con su demostración y su tiempo, y botones para cambiarlo o reordenarlo.">
+        <img class="phone dark-only" src="img/es/dark/workout.png" width="618" height="1184" loading="lazy" alt="Un plan de entrenamiento generado: cada movimiento con su demostración y su tiempo, y botones para cambiarlo o reordenarlo.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-mobility" aria-labelledby="tab-mobility" tabindex="0">
+      <div>
+        <h3 class="panel-title">Sesiones de movilidad</h3>
+        <p class="sub">Ejercicios pensados para la movilidad, de principio a fin.</p>
+        <ul>
+          <li>100 ejercicios específicos de movilidad.</li>
+          <li>Elige duración y zona: cuerpo completo, tren superior, tren inferior o core.</li>
+          <li>Usa solo el material que tienes, o ninguno.</li>
+          <li>Cada movimiento con su demostración animada.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/es/light/mobility.png" width="618" height="1184" loading="lazy" alt="Una sesión de movilidad en marcha, con la demostración animada del movimiento.">
+        <img class="phone dark-only" src="img/es/dark/mobility.png" width="618" height="1184" loading="lazy" alt="Una sesión de movilidad en marcha, con la demostración animada del movimiento.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-stretch" aria-labelledby="tab-stretch" tabindex="0">
+      <div>
+        <h3 class="panel-title">Estirar un músculo</h3>
+        <p class="sub">Toca la zona que notas cargada y recibe una rutina corta para ella.</p>
+        <ul>
+          <li>Mapa corporal de frente y de espalda: toca el músculo que quieres estirar.</li>
+          <li>Dos o tres movimientos pensados para ese músculo.</li>
+          <li>Ajusta la duración y el descanso entre movimientos, o déjalos en automático.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/es/light/stretch.png" width="618" height="1184" loading="lazy" alt="Estirar un músculo: mapa corporal de frente y de espalda con los cuádriceps seleccionados, y la duración y el descanso de la rutina.">
+        <img class="phone dark-only" src="img/es/dark/stretch.png" width="618" height="1184" loading="lazy" alt="Estirar un músculo: mapa corporal de frente y de espalda con los cuádriceps seleccionados, y la duración y el descanso de la rutina.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-eyes" aria-labelledby="tab-eyes" tabindex="0">
+      <div>
+        <h3 class="panel-title">Descanso visual</h3>
+        <p class="sub">Ejercicios breves para los días de mucha pantalla.</p>
+        <ul>
+          <li>Un bloque guiado que empiezas cuando quieras desde la pantalla de inicio.</li>
+          <li>Movimientos como el trazado de ochos, con un temporizador que marca el ritmo.</li>
+          <li>Combínalo con un aviso de descanso visual para no tener que acordarte.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/es/light/eye-rest.png" width="618" height="1184" loading="lazy" alt="Un bloque de descanso visual en marcha: trazado de ochos con un temporizador de 2 minutos.">
+        <img class="phone dark-only" src="img/es/dark/eye-rest.png" width="618" height="1184" loading="lazy" alt="Un bloque de descanso visual en marcha: trazado de ochos con un temporizador de 2 minutos.">
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-nudges" aria-labelledby="tab-nudges" tabindex="0">
+      <div>
+        <h3 class="panel-title">Avisos</h3>
+        <p class="sub">Recordatorios para moverte y descansar la vista, a tu ritmo.</p>
+        <ul>
+          <li><strong>Aviso de snack:</strong> cada pocos minutos, un aviso para levantarte y hacer un snack de ejercicio.</li>
+          <li><strong>Aviso de descanso visual:</strong> un recordatorio para mirar a lo lejos durante 20 segundos.</li>
+          <li>Elige el intervalo, alinea los avisos con el reloj y pospón cuando estés liado.</li>
+          <li>Limítalos a tu horario de trabajo si quieres.</li>
+        </ul>
+      </div>
+      <div class="shot">
+        <img class="phone light-only" src="img/es/light/nudges.png" width="618" height="1184" loading="lazy" alt="Ajustes de avisos: intervalos de snack y de descanso visual, modo, posponer y horario de trabajo.">
+        <img class="phone dark-only" src="img/es/dark/nudges.png" width="618" height="1184" loading="lazy" alt="Ajustes de avisos: intervalos de snack y de descanso visual, modo, posponer y horario de trabajo.">
+      </div>
+    </div>
+  </section>
+
+  <section id="more">
+    <p class="eyebrow">Y además</p>
+    <h2>Detalles que te mantienen en movimiento.</h2>
+    <div class="grid">
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M10 2h4"/></svg>
+        <h3>Temporizador de concentración</h3>
+        <p>Un temporizador Pomodoro integrado alterna rondas de concentración y descansos cortos. Un descanso puede acabar con un snack de ejercicio.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        <h3>Estadísticas y mapa corporal</h3>
+        <p>Hoy y esta semana: bloques, series, entrenamientos y los músculos que has trabajado en un mapa corporal de frente y de espalda.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6v12M18 6v12M3 9v6M21 9v6M6 12h12"/></svg>
+        <h3>Se adapta a lo que tienes</h3>
+        <p>Dile a IpsoFit qué material tienes y solo elegirá movimientos que puedas hacer. Sin material, te basta con tu cuerpo: en la oficina, en un hotel o en un parque.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        <h3>Copia de seguridad</h3>
+        <p>Tu historial se queda en tu dispositivo. Expórtalo a una copia de seguridad y restáuralo cuando quieras.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M12 3a9 9 0 0 1 0 18"/></svg>
+        <h3>Claro u oscuro, español o inglés</h3>
+        <p>Sigue a tu sistema o elige tú el tema y el idioma.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5a2 2 0 0 1 2-2h5a3 3 0 0 1 3 3v15a2 2 0 0 0-2-2H2z"/><path d="M22 5a2 2 0 0 0-2-2h-5a3 3 0 0 0-3 3v15a2 2 0 0 1 2-2h8z"/></svg>
+        <h3>Una biblioteca de más de 600 ejercicios</h3>
+        <p>Todos los grupos musculares, del peso corporal al material de gimnasio. IpsoFit tira de todos, así que tus sesiones no se repiten.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="join" id="join">
+    <p class="eyebrow">Beta cerrada</p>
+    <h2>Prueba IpsoFit antes del lanzamiento.</h2>
+    <p class="sub">Escríbenos y dinos si usas Android o Windows. Para Android, envíanos la cuenta de
+      Google que usas en Google Play para añadirte a la prueba.</p>
+    <a class="btn" href="mailto:support@ipsofit.com?subject=Beta%20de%20IpsoFit&amp;body=Plataforma%20(Android%20o%20Windows)%3A%20%0ACuenta%20de%20Google%20(solo%20Android)%3A%20">Escribe a support@ipsofit.com</a>
+  </div>
+
+  <section id="faq" class="faq">
+    <p class="eyebrow">Preguntas</p>
+    <h2>Conviene saber</h2>
+    <details>
+      <summary>¿En qué dispositivos funciona IpsoFit?</summary>
+      <p>En móviles Android y PC con Windows. La app está en español e inglés.</p>
+    </details>
+    <details>
+      <summary>¿Dónde se guardan mis entrenamientos?</summary>
+      <p>En tu dispositivo. La cuenta solo sirve para controlar el acceso durante la beta. Los
+        detalles están en la <a href="privacy.es.html">Política de privacidad</a>.</p>
+    </details>
+    <details>
+      <summary>¿Necesito material?</summary>
+      <p>No. Elige «solo peso corporal» y todos los movimientos se pueden hacer en la oficina, en un hotel o en un parque.
+        Añade el material que tengas e IpsoFit también lo usará.</p>
+    </details>
+    <details>
+      <summary>¿Cómo me uno a la beta?</summary>
+      <p>Escribe a <a href="mailto:support@ipsofit.com?subject=Beta%20de%20IpsoFit">support@ipsofit.com</a>
+        con tu plataforma. Si usas Android, envía también la cuenta de Google que usas en Google Play.</p>
+    </details>
+    <details>
+      <summary>¿IpsoFit es consejo médico?</summary>
+      <p>No. IpsoFit planifica ejercicio deportivo y no conoce tu estado de salud. Lee el
+        <a href="disclaimer.es.html">Aviso médico y de seguridad</a> antes de tu primer bloque.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Legal">
       <a href="privacy.es.html">Privacidad</a>
       <a href="terms.es.html">Términos</a>
       <a href="disclaimer.es.html">Aviso médico</a>
-      <a class="lang" href="index.html" lang="en" hreflang="en">English</a>
+      <a href="delete-account.es.html">Eliminar tu cuenta</a>
+      <a href="legal.es.html">Legal</a>
+      <a href="index.html" lang="en" hreflang="en">English</a>
     </nav>
-  </header>
-
-  <main>
-    <h1>Legal</h1>
-    <p>IpsoFit es una app Pomodoro para Windows y Android que convierte los descansos
-      cortos en bloques de ejercicio de cinco minutos, generando entrenamientos y rutinas de
-      estiramientos aleatorios. Tus datos de entrenamiento se quedan en tu dispositivo; la
-      cuenta solo sirve para controlar el acceso durante la beta. Estas páginas explican cómo
-      trata IpsoFit tus datos, las condiciones de uso y el aviso de salud y seguridad que
-      aceptas antes de hacer ejercicio.</p>
-
-    <div class="index-links">
-      <a href="privacy.es.html">
-        Política de privacidad
-        <span>Qué datos trata la app, dónde viven, quiénes son nuestros proveedores y cuáles son tus derechos.</span>
-      </a>
-      <a href="terms.es.html">
-        Términos de uso
-        <span>El acuerdo que rige el uso de IpsoFit durante la beta.</span>
-      </a>
-      <a href="disclaimer.es.html">
-        Aviso médico y de seguridad
-        <span>IpsoFit planifica ejercicio deportivo. Léelo antes de tu primer bloque.</span>
-      </a>
-      <a href="delete-account.es.html">
-        Eliminar tu cuenta
-        <span>Cómo eliminar tu cuenta, desde la app o por correo, y qué se conserva.</span>
-      </a>
-    </div>
-
-    <p class="updated" style="margin-top:32px">All pages are also available in
-      <a href="index.html" lang="en">English</a>.</p>
-  </main>
-
-  <footer class="site">
-    <p>IpsoFit está desarrollada por Carlos Barrado. Contacto: <a href="mailto:support@ipsofit.com">support@ipsofit.com</a>.<br>
-      Estructura de página adaptada de <a href="https://github.com/OpenStrap/edge">OpenStrap/edge</a> (MIT).</p>
-  </footer>
-</div>
+    <p>IpsoFit planifica ejercicio deportivo. Consulta a un profesional sanitario antes de empezar y para de inmediato si algo no va bien.</p>
+    <p>© 2026 Ipsofit · <a href="mailto:support@ipsofit.com">support@ipsofit.com</a></p>
+  </div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>
